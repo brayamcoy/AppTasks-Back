@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost/apptasks", {
+  .connect(process.env.DB_URL, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useFindAndModify: true,
