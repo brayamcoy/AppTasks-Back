@@ -16,6 +16,7 @@ Rest API created with Node JS and related technologies (ES6, mongodb, etc)
 ## Environment Variables
 
 Inside .env
+- DB_URL, your database mongodb
 - PORT, the default port 3000 or the one you assign
 - JWT_SECRET = your secret jwt key to validate the token
 
