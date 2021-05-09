@@ -1,11 +1,11 @@
 const { Tasks } = require("../models/Tasks");
 
 const createTask = async (req, res) => {
-  const { content } = req.body;
+  const { content, date } = req.body;
 
   const task = new Tasks({
     content,
-    date: new Date(),
+    date: new Date(date),
     is_completed: false,
   });
 
