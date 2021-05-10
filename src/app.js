@@ -13,9 +13,14 @@ dotenv.config();
 createRoles();
 
 //Middleware
+var corsOptions = {
+  origin: "https://app-tasks-pwa.netlify.app",
+  optionsSuccessStatus: 200, // For legacy browser support
+};
+
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.use(authRouter);
 app.use(userRouter);
