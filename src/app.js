@@ -14,7 +14,7 @@ createRoles();
 
 //Middleware
 var corsOptions = {
-  origin: "https://app-tasks-pwa.netlify.app",
+  origin: process.env.HOST_NAME,
   optionsSuccessStatus: 200, // For legacy browser support
 };
 
